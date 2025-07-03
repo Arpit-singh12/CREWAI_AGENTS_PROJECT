@@ -42,6 +42,9 @@ export function Dashboard() {
     monthlyRevenue: 0,
     courseCompletion: 87
   });
+  
+  //Enabling manual loading for loading animation to stop...change..
+  const [manualLoading, setManualLoading] = useState(false);
 
   const [activities, setActivities] = useState<ActivityItem[]>([]);
   const [upcomingClasses] = useState([
@@ -101,10 +104,15 @@ export function Dashboard() {
   }, [revenueData, clientData, ordersData]);
 
   const refreshData = async () => {
+    setManualLoading(true);
+    await Promise.all([refetchRevenue(), refetchClients(), refetchOrders()]);
+    setTimeout(() => setManualLoading(false), 10000); // setting loading animation for the 10 sec only...
     await Promise.all([refetchRevenue(), refetchClients(), refetchOrders()]);
   };
 
-  const isLoading = revenueLoading || clientLoading || ordersLoading;
+  const isLoading = manualLoading; // only for using the manual loading....
+  
+  //const isLoading = revenueLoading || clientLoading || ordersLoading;
 
   const statsConfig = [
     { 
