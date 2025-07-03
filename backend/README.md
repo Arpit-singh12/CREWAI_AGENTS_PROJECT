@@ -106,7 +106,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 - `GET /api/analytics/revenue` - Revenue metrics
 - `GET /api/analytics/clients` - Client insights
 - `GET /api/analytics/courses` - Course performance
-- `GET /api/analytics/attendance` - Attendance reports
+- `GET /api/analytics/attendance` - Attendance report
 
 ## Agent Configurations
 
