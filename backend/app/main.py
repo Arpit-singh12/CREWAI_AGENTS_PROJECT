@@ -22,10 +22,15 @@ app = FastAPI(
     lifespan=lifespan
 )
 
+origins = [
+    "https://crewai-agents-project.vercel.app", 
+    "http://localhost:5173"
+]
+
 # CORS middleware for frontend integration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Add your frontend URLs
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
