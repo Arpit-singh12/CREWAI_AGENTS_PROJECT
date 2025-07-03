@@ -25,7 +25,7 @@ app = FastAPI(
 # CORS middleware for frontend integration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://crewai-agents-project.vercel.app", "http://localhost:5173", "http://localhost:3000"],  # Add your frontend URLs
+    allow_origins=["*"],  # Add your frontend URLs
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
