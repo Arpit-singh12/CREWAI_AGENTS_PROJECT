@@ -8,9 +8,11 @@ from bson import ObjectId
 import asyncio
 from motor.motor_asyncio import AsyncIOMotorClient
 import random
+import os
 
 # Database connection
-MONGODB_URL = "mongodb://localhost:27017"
+# added a env URL to deploy it...
+MONGODB_URL = os.environ.get("MONGODB_URL", "mongodb://localhost:27017")
 DATABASE_NAME = "multi_agent_db"
 
 async def populate_sample_data():
