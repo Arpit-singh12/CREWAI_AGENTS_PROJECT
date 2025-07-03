@@ -107,7 +107,7 @@ export function Dashboard() {
     setManualLoading(true);
     await Promise.all([refetchRevenue(), refetchClients(), refetchOrders()]);
     setTimeout(() => setManualLoading(false), 10000); // setting loading animation for the 10 sec only...
-    await Promise.all([refetchRevenue(), refetchClients(), refetchOrders()]);
+    //await Promise.all([refetchRevenue(), refetchClients(), refetchOrders()]);
   };
 
   const isLoading = manualLoading; // only for using the manual loading....
