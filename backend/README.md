@@ -227,3 +227,10 @@ The system integrates with external services for:
 - Mobile app API support
 - Advanced reporting and dashboard features
 - Integration with more external services
+
+
+
+## Credits:
+- Chatgpt, Claude : For frontend testing purpose
+- CREWAI Documentation for use code templates, and Agents implementations details.
+
