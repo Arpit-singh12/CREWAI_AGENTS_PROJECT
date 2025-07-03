@@ -70,7 +70,7 @@ export function AuthPage({ onLogin }: AuthPageProps) {
     setTimeout(() => {
       const user = {
         id: '1',
-        name: formData.name || 'John Doe',
+        name: formData.name || 'Arpit singh',
         email: formData.email,
         role: 'admin'
       };

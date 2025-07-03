@@ -52,8 +52,8 @@ async def populate_sample_data():
             "updated_at": datetime.utcnow()
         },
         {
-            "name": "Sarah Johnson",
-            "email": "sarah@example.com",
+            "name": "Kartik singh",
+            "email": "Kartik@example.com",
             "phone": "+91 9876543230", 
             "date_of_birth": datetime(1992, 12, 10),
             "address": "789 Brigade Road, Bangalore",
@@ -64,8 +64,8 @@ async def populate_sample_data():
             "updated_at": datetime.utcnow()
         },
         {
-            "name": "Mike Chen",
-            "email": "mike@example.com",
+            "name": "Roy",
+            "email": "roy@example.com",
             "phone": "+91 9876543240",
             "date_of_birth": datetime(1988, 3, 25),
             "address": "321 Linking Road, Mumbai",
@@ -75,8 +75,8 @@ async def populate_sample_data():
             "updated_at": datetime.utcnow() - timedelta(days=30)
         },
         {
-            "name": "Lisa Wang",
-            "email": "lisa@example.com",
+            "name": "Avii",
+            "email": "avii@example.com",
             "phone": "+91 9876543250",
             "date_of_birth": datetime(1995, 7, 18),
             "address": "654 Commercial Street, Bangalore",
